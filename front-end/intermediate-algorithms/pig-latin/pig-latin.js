@@ -1,5 +1,7 @@
 function translatePigLatin(str) {
-  str = str.slice(1) + str[0] + 'ay';
+  if (str[0].match(/[aeiou]/)) {
+    str += 'way';
+  }
 
   return str;
 }
