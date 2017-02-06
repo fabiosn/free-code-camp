@@ -1,5 +1,6 @@
 function myReplace(str, before, after) {
-  return str;
+  return str.replace(before, after);
 }
 
-myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+console.log(myReplace("His name is Tom", "Tom", "john"));
