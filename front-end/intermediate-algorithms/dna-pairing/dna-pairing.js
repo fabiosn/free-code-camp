@@ -1,24 +1,27 @@
 function pairElement(str) {
   var nucleobases = str.split('');
+  var pairs = [];
 
   for (var i = 0; i < nucleobases.length; i++) {
-    switch(nucleobases[i]) {
+    var providedNucleobase = nucleobases[i];
+
+    switch(providedNucleobase) {
       case 'A':
-        console.log('T');
+        pairs.push([providedNucleobase, 'T'])
         break;
       case 'C':
-        console.log('G');
+        pairs.push([providedNucleobase, 'G'])
         break;
       case 'G':
-        console.log('C');
+        pairs.push([providedNucleobase, 'C'])
         break;
       case 'T':
-        console.log('A');
+        pairs.push([providedNucleobase, 'A'])
         break;
     }
   }
 
-  return nucleobases;
+  return pairs;
 }
 
 console.log(pairElement("GCG"));
