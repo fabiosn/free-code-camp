@@ -7,16 +7,16 @@ function pairElement(str) {
 
     switch(providedNucleobase) {
       case 'A':
-        pairs.push([providedNucleobase, 'T'])
+        pairs.push([providedNucleobase, 'T']);
         break;
       case 'C':
-        pairs.push([providedNucleobase, 'G'])
+        pairs.push([providedNucleobase, 'G']);
         break;
       case 'G':
-        pairs.push([providedNucleobase, 'C'])
+        pairs.push([providedNucleobase, 'C']);
         break;
       case 'T':
-        pairs.push([providedNucleobase, 'A'])
+        pairs.push([providedNucleobase, 'A']);
         break;
     }
   }
