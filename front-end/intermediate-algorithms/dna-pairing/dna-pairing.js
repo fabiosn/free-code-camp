@@ -1,5 +1,7 @@
 function pairElement(str) {
-  return str;
+  var nucleoBases = str.split('');
+
+  return nucleoBases;
 }
 
-pairElement("GCG");
+console.log(pairElement("GCG"));
