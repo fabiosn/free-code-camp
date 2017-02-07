@@ -3,9 +3,16 @@ function fearNotLetter(str) {
 
   if (charCodeDiff - str.length == 0) {
     return undefined;
-  }
+  } else {
+    for (var i = 0; i < str.length - 1; i++) {
+      var currentLetter = str.charCodeAt(i);
+      var nextLetter = str.charCodeAt(i + 1);
 
-  return 'missing a letter';
+      if ((nextLetter - currentLetter) > 1) {
+        return String.fromCharCode(currentLetter + 1);
+      }
+    }
+  }
 }
 
 console.log(fearNotLetter("abce"));
