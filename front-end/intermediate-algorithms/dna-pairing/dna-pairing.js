@@ -1,8 +1,8 @@
 function pairElement(str) {
-  var nucleoBases = str.split('');
+  var nucleobases = str.split('');
 
-  for (var i = 0; i < nucleoBases.length; i++) {
-    switch(nucleoBases[i]) {
+  for (var i = 0; i < nucleobases.length; i++) {
+    switch(nucleobases[i]) {
       case 'A':
         console.log('T');
         break;
@@ -18,7 +18,7 @@ function pairElement(str) {
     }
   }
 
-  return nucleoBases;
+  return nucleobases;
 }
 
 console.log(pairElement("GCG"));
